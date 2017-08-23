@@ -8,7 +8,7 @@ public class MailMerge
         Scanner keyboard = new Scanner(System.in);
         
         String name = "";
-        float donation;
+        String donation = "";
         boolean keepGoing = true;
         
         System.out.println("Thank You Letters");
@@ -20,10 +20,10 @@ public class MailMerge
             name = keyboard.nextLine();
             if (name.equals("quit")){
                 keepGoing = false;
-            }        
+            } else {     
             
             System.out.print("Please enter the donation. ");
-            donation = keyboard.nextFloat();
+            donation = keyboard.nextLine();
                 
                 System.out.println("Dear " + name + ",");
                 System.out.println("");
@@ -42,7 +42,7 @@ public class MailMerge
                 System.out.println("");
                 System.out.println("Paula Jones");
                 System.out.println("YourCharity.org");
-            
+            }    
         }    
     }
 }
