@@ -16,7 +16,7 @@ public class MailMerge
         
         while (keepGoing)
         {
-            System.out.print("Please enter the donor's name. ");
+            System.out.print("\nPlease enter the donor's name. ");
             name = keyboard.nextLine();
             if (name.equals("quit")){
                 keepGoing = false;
